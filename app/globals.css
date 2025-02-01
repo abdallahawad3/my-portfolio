@@ -39,8 +39,8 @@ body {
     --background: 233 100% 5%;
     --foreground: 235 17% 79%;
     --clr-brand: 264 87% 83%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 233 76% 6%;
+    --card-foreground: 235 31% 81%;
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
     --primary: 0 0% 98%;
@@ -70,5 +70,15 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  .no-visible-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .no-visible-scrollbar::-webkit-scrollbar {
+    display: none;
   }
 }
